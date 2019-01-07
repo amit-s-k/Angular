@@ -4,10 +4,12 @@
     .controller("mycontroller",function($scope){
         $scope.check=function(){
             let item=document.getElementById("add");
-            if($scope.name==undefined){
+            let   ins = document.getElementById("textbox").value;
+            let text=$scope.name;
+            if(text==undefined||ins==null||ins==undefined||ins==""){
                 item.innerHTML="Please enter data first";
             }
-            else if($scope.name.split(",").filter(ch=>ch!=" ").length<=3){
+            else if(text.split(",").filter(ch=>ch!=" ").length<=3){
                 item.innerHTML="Enjoy!";
             }
             else{
