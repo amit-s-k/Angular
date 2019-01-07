@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+    <head>
+        <title>
+            My Angular
+        </title>
+        <meta charset="utf-8">
+        <script src="angular.min.js"></script>
+        <script src="app.js"></script>
+        <link rel="stylesheet" href="main.css" type="text/css">
+    </head>
+    <body>
+        <div ng-controller="mycontroller">
+            <input type="text" ng-model="name">
+            <button type="button" ng-click="check();">check if too much</button>
+        </div>
+        <div id="add"></div>
+
+    </body>
+</html>
