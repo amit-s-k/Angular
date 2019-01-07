@@ -7,7 +7,7 @@
             if($scope.name==undefined){
                 item.innerHTML="Please enter data first";
             }
-            else if($scope.name.split(",").length<=3){
+            else if($scope.name.split(",").filter(ch=>ch!=" ").length<=3){
                 item.innerHTML="Enjoy!";
             }
             else{
